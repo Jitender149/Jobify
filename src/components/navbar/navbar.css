@@ -1,0 +1,22 @@
+.navbar-container{
+    width: 100px;
+    height:  100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
