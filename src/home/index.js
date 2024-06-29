@@ -12,7 +12,7 @@ import Logout from '../components/logout';
 const clientID = "629398130306-6dm48rpk39tlnhmca18hup0hj251m00a.apps.googleusercontent.com";
 
 export default function Home() {
-  const [user, setUser] = useState(null);
+  //const [user, setUser] = useState(null);
 
   useEffect(() => {
     function start() {
@@ -31,13 +31,13 @@ export default function Home() {
   return (
     <Router>
       <div className='main-body'>
-        <NavBar user={user} />
+        <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/jobPage" element={<JobPage />} />
           <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
-        {!user ? <Login setUser={setUser} /> : <Logout setUser={setUser} />}
+        {/* {!user ? <Login setUser={setUser} /> : <Logout setUser={setUser} />} */}
       </div>
     </Router>
   );
